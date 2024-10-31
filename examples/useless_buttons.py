@@ -7,7 +7,7 @@ def root() -> Tk:
     :return: Tk
     """
     root: Tk = Tk()
-    root.title("It's me, mark")
+    root.title("Useless buttons")
     root.geometry("200x200")
     return root
 
