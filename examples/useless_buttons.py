@@ -3,6 +3,7 @@ from tkinter import *
 
 def root() -> Tk:
     """
+    Creating root
     :return: Tk
     """
     root: Tk = Tk()
