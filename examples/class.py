@@ -25,12 +25,24 @@ class Application(Frame):
         self.bttn3.grid()
         self.bttn3["text"] = "And me!"
 
-def main():
+
+def root() -> Tk:
+    """
+    Creating root
+    :return: Tk
+    """
     root: Tk = Tk()
-    root.title("Useless buttons")
-    root.geometry("200x50")
-    app: Application = Application(root)
-    root.mainloop()
+    root.title("It's me, mark")
+    root.geometry("200x200")
+    return root
+
+def main():
+    r: Tk = root()
+
+    # Creating your own object based on Frame with widgets
+    app: Application = Application(r)
+
+    r.mainloop()
 
 if __name__ == "__main__":
     main()
