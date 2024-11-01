@@ -3,7 +3,7 @@ from tkinter import *
 
 class Application(Frame):
     """
-    GUI-application with three buttons
+    GUI-application with button listener
     """
     def __init__(self, master: Tk):
         super(Application, self).__init__(master)
@@ -14,7 +14,6 @@ class Application(Frame):
         """
         Creates buttons, text boxes and text areas
         """
-
         # Creates Label
         self.inst_lbl: Label = Label(self, text="Enter the password")
         self.inst_lbl.grid(row=0, column=0, columnspan=2, sticky=W)
