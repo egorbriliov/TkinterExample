@@ -5,7 +5,6 @@ class Application(Frame):
     """
     GUI-application with three buttons
     """
-
     def __init__(self, master: Tk):
         super(Application, self).__init__(master)
         self.grid()
@@ -54,9 +53,6 @@ class Application(Frame):
         self.secret_txt.delete(0.0, END)
         # Inserting program answer into field
         self.secret_txt.insert(0.0, message)
-
-
-
 
 def root() -> Tk:
     """
