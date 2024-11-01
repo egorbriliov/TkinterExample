@@ -4,7 +4,7 @@ from tkinter import *
 
 class Application(Frame):
     """
-    GUI-application with three buttons
+    GUI-application with widgets that helps users to choose
     """
     def __init__(self, master: Tk):
         super(Application, self).__init__(master)
